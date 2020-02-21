@@ -1,0 +1,20 @@
+-- By default this file is used by `parseRoutesFile` in Foundation.hs
+-- Syntax for this file here: https://www.yesodweb.com/book/routing-and-handlers
+
+/static StaticR Static appStatic
+/auth   AuthR   Auth   getAuth
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET POST
+
+/comments CommentR POST
+
+/profile ProfileR GET
+
+/hello HelloR GET
+/books BooksR GET POST
+/books/#BookId BookR GET DELETE
+/pets PetsR GET POST
+/pets/#PetId PetR GET DELETE
